@@ -1,0 +1,30 @@
+{
+  "name": "stacks",
+  "version": "0.0.0",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "get": "cdktf get",
+    "build": "tsc",
+    "postbuild": "cdktf synth",
+    "list": "cdktf list",
+    "compile": "tsc --pretty",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "upgrade": "npm i cdktf@latest cdktf-cli@latest",
+    "upgrade:next": "npm i cdktf@next cdktf-cli@next"
+  },
+  "dependencies": {
+    "@cdktf/provider-azurerm": "0.4.79",
+    "cdktf": "0.8.3",
+    "constructs": "10.0.15"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.17",
+    "jest": "27.4.5",
+    "ts-jest": "27.1.2",
+    "ts-node": "10.4.0"
+  }
+}
