@@ -1,0 +1,14 @@
+{
+  "extends": ["github>freecodecamp/renovate-config"],
+  "ignorePaths": ["scratchpad"],
+  "packageRules": [
+    {
+      "groupName": "cdktf",
+      "matchPackageNames": ["cdktf", "cdktf-cli", "@cdktf/provider-azurerm"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
